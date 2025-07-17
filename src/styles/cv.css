@@ -1,0 +1,81 @@
+main {
+  padding: var(--space-l) var(--space-xl);
+  width: clamp(350px, 92vw, 600px);
+  margin: auto;
+  margin-top: var(--space-xl);
+  color: var(--clr-text-cv-secondary);
+  border-left: 5rem solid var(--clr-text);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+main section {
+  margin-bottom: var(--space-xs);
+}
+
+main section h2,
+strong {
+  margin: 0;
+  color: var(--clr-text-cv);
+}
+
+main section:nth-child(n + 2) h2 {
+  border-bottom: 2px solid #555555;
+  padding: var(--space-xxs) 0;
+  margin-bottom: var(--space-s);
+}
+
+main section.personal-contact {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-l);
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-s);
+}
+
+main section.personal-contact div p {
+  word-break: break-all;
+}
+main section.personal-contact img {
+  width: clamp(100px, 90%, 200px);
+  align-self: center;
+  justify-self: center;
+  grid-area: 1 / 2/ 2 / 3;
+}
+
+main section.personal-contact div.profile-detail div {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  margin-bottom: var(--space-xs);
+}
+
+main section.personal-contact div img {
+  width: 24px;
+  flex-shrink: 0;
+}
+main section ul {
+  padding: 0;
+  margin-bottom: var(--space-s);
+}
+main section ul li p strong {
+  font-family: var(--font-family-medium);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+}
+
+main section:nth-child(4) ul li p:nth-child(3) {
+  margin-top: var(--space-xs);
+}
+
+main section ul li div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section ul li div p:nth-child(2) {
+  font-size: var(--font-size-sm);
+}
+
+main section:last-child {
+  margin-bottom: var(--space-xl);
+}

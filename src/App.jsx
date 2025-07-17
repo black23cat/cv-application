@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { format } from 'date-fns';
 import Sidebar from './components/Sidebar';
+import PreviewCV from './components/GeneratedCv';
 
 function App() {
   const [userData, setUserData] = useState({});
@@ -96,8 +97,8 @@ function App() {
                 : e.target.position.value,
             company: e.target.company.value,
             jobDesc: e.target.jobDesc.value,
-            from: format(e.target.from.value, 'MMMM, yyyy'),
-            to: format(e.target.to.value, 'MMMM, yyyy'),
+            from: format(e.target.from.value, 'MMM yyyy'),
+            to: format(e.target.to.value, 'MMM yyyy'),
           }
         : list
     );
@@ -189,6 +190,15 @@ function App() {
           addSkillLists,
         }}
       />
+      <PreviewCV
+        data={{
+          userData,
+          educationData: educationLists,
+          experienceData: experienceLists,
+          skillData: skillLists,
+        }}
+      />
+      <footer></footer>
     </>
   );
 }

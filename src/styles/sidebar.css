@@ -1,0 +1,147 @@
+aside {
+  max-width: clamp(300px, 92vw, 600px);
+  margin: auto;
+}
+
+aside h2 {
+  border-bottom: 3px solid var(--clr-text);
+}
+
+h2 span {
+  display: flex;
+  gap: var(--space-s);
+  padding-left: var(--space-s);
+}
+
+h2 span img {
+  width: 28px;
+}
+form {
+  display: none;
+  padding: var(--space-s);
+}
+
+form.show,
+form.profile-form {
+  display: block;
+}
+form.profile-form {
+  padding: 0;
+}
+form div {
+  margin-bottom: var(--space-s);
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  color: var(--clr-text-secondary);
+}
+
+input,
+textarea {
+  padding: var(--space-xs);
+  padding-left: var(--space-s);
+  background-color: rgb(233, 233, 233);
+  border: none;
+  color: black;
+}
+
+input[type='submit'],
+input[type='button'],
+button.add {
+  background-color: var(--clr-text);
+  color: var(--clr-primary);
+  width: clamp(90px, 30%, 120px);
+  padding: var(--space-xs);
+}
+
+.form-btn-wrapper {
+  position: relative;
+  display: flex;
+  gap: var(--space-s);
+  margin-top: var(--space-l);
+}
+
+.form-btn-wrapper input[type='button'] {
+  cursor: pointer;
+  background-color: #d90061;
+}
+.form-btn-wrapper button.delete-form {
+  position: absolute;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  width: 32px;
+}
+
+.form-btn-wrapper button.delete-form img {
+  position: static;
+}
+
+input[type='submit']:hover,
+button:hover,
+button.add:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+input[type='submit']:active,
+button:active {
+  cursor: default;
+  opacity: 1;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--clr-header-bg);
+}
+
+input:focus,
+textarea:focus,
+input:hover,
+textarea:hover {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+div.card {
+  /* border: 2px solid red; */
+  display: grid;
+  border-radius: 5px;
+  font-family: var(--font-family-medium);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--space-s);
+}
+
+div.card button {
+  position: relative;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: var(--space-s);
+  font-size: var(--font-size-lg);
+}
+
+div.card button img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: var(--space-l);
+  transition: transform 0.3s ease;
+}
+
+div.card button img.rotate {
+  transform: rotate(-180deg);
+}
+
+aside button.add {
+  margin-top: var(--space-l);
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+}

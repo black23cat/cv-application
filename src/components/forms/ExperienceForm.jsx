@@ -59,7 +59,7 @@ export default function ExperienceForm({
           name="jobDesc"
           rows="5"
           cols="33"
-          maxLength="400"
+          maxLength="200"
           value={experienceData.jobDesc}
           onChange={handleChange}
         ></textarea>

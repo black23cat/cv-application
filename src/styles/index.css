@@ -34,6 +34,7 @@
   --clr-header-bg: #113f67;
   --clr-text: #002749;
   --clr-text-secondary: #003563;
+  --clr-text-cv: #181818;
   --font-family-base: 'M Plus Code Latin', 'Calibri';
   --font-family-medium: 'M Plus Code Latin Medium', 'Calibri';
   --font-family-bold: 'M Plus Code Latin Bold', 'Calibri';
@@ -76,9 +77,11 @@ h2 {
   color: var(--clr-text);
   font: var(--font-size-2xl) var(--font-family-bold);
   font-weight: 600;
-  border-bottom: 3px solid var(--clr-text);
   margin-top: var(--space-l);
   margin-bottom: var(--space-l);
   padding-bottom: var(--space-s);
 }
 
+footer {
+  height: 20vh;
+}

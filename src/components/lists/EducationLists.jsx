@@ -19,7 +19,7 @@ export default function EducationLists({ data }) {
                 className="edit-form-btn"
                 onClick={() => handleEditForm(list.id)}
               >
-                {list.school} ({list.graduate})
+                {list.school}
                 <img
                   className={activeEducationId === list.id ? 'rotate' : ''}
                   src={expandIcon}

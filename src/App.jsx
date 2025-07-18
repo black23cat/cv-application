@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { format } from 'date-fns';
 import Sidebar from './components/Sidebar';
 import PreviewCV from './components/GeneratedCv';
+import './styles/desktop.css';
 
 function App() {
   const [userData, setUserData] = useState({});

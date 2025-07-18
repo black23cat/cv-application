@@ -64,7 +64,7 @@ body {
 
 header {
   background-color: var(--clr-header-bg);
-  width: 100vw;
+  width: calc(100vw-15px);
   margin: 0;
   padding: var(--space-l);
   margin-bottom: var(--space-l);
@@ -81,8 +81,4 @@ h2 {
   margin-top: var(--space-l);
   margin-bottom: var(--space-l);
   padding-bottom: var(--space-s);
-}
-
-footer {
-  height: 20vh;
 }
